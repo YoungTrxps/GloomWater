@@ -1,0 +1,367 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Mainframe = Instance.new("Frame")
+local Money = Instance.new("Frame")
+local Getbagg = Instance.new("TextButton")
+local Sellbagg = Instance.new("TextButton")
+local warning = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Player = Instance.new("Frame")
+local SuperSpeed = Instance.new("TextButton")
+local NormaleSpeed = Instance.new("TextButton")
+local SuperJump = Instance.new("TextButton")
+local NormaleJump = Instance.new("TextButton")
+local Teleport = Instance.new("Frame")
+local PawnShop = Instance.new("TextButton")
+local Hospital = Instance.new("TextButton")
+local GunStore = Instance.new("TextButton")
+local clothingstoregirl = Instance.new("TextButton")
+local BarberShop = Instance.new("TextButton")
+local JobCenter = Instance.new("TextButton")
+local InkedTattoos = Instance.new("TextButton")
+local clothingstoreboy = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local TabHolder = Instance.new("Frame")
+local teleport = Instance.new("TextButton")
+local Player_2 = Instance.new("TextButton")
+local FastMoney = Instance.new("TextButton")
+local Madeby = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Mainframe.Name = "Mainframe"
+Mainframe.Parent = ScreenGui
+Mainframe.BackgroundColor3 = Color3.fromRGB(7, 255, 247)
+Mainframe.Position = UDim2.new(0.349225283, 0, 0.177748546, 0)
+Mainframe.Size = UDim2.new(0, 473, 0, 423)
+Mainframe.Active = true
+Mainframe.Draggable = true
+
+Money.Name = "Money"
+Money.Parent = Mainframe
+Money.BackgroundColor3 = Color3.fromRGB(7, 73, 255)
+Money.Position = UDim2.new(0, 0, 0.333333403, 0)
+Money.Size = UDim2.new(0, 473, 0, 282)
+Money.Visible = false
+
+Getbagg.Name = "Getbagg"
+Getbagg.Parent = Money
+Getbagg.BackgroundColor3 = Color3.fromRGB(3, 255, 213)
+Getbagg.Position = UDim2.new(0.270613104, 0, 0.0319148935, 0)
+Getbagg.Size = UDim2.new(0, 200, 0, 50)
+Getbagg.Font = Enum.Font.SourceSans
+Getbagg.Text = "Getbagg"
+Getbagg.TextColor3 = Color3.fromRGB(0, 0, 0)
+Getbagg.TextScaled = true
+Getbagg.TextSize = 14.000
+Getbagg.TextWrapped = true
+Getbagg.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(109.654663, 5.22905159, -44.8484955, 0.549224854, 1.13219279e-07, -0.835674644, -3.13651825e-08, 1, 1.14868563e-07, 0.835674644, -3.68775801e-08, 0.549224854)
+	end)
+
+Sellbagg.Name = "Sellbagg"
+Sellbagg.Parent = Money
+Sellbagg.BackgroundColor3 = Color3.fromRGB(1, 255, 247)
+Sellbagg.Position = UDim2.new(0.270613104, 0, 0.294326246, 0)
+Sellbagg.Size = UDim2.new(0, 200, 0, 50)
+Sellbagg.Font = Enum.Font.SourceSans
+Sellbagg.Text = "SellBagg"
+Sellbagg.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sellbagg.TextScaled = true
+Sellbagg.TextSize = 14.000
+Sellbagg.TextWrapped = true
+Sellbagg.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(248.488068, 5.23403645, -107.049438, -0.933388531, 1.1079611e-08, 0.358867437, -3.1245893e-08, 1, -1.12142153e-07, -0.358867437, -1.15885335e-07, -0.933388531)
+end)
+
+warning.Name = "warning"
+warning.Parent = Money
+warning.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+warning.Position = UDim2.new(0, 0, 0.521276593, 0)
+warning.Size = UDim2.new(0, 473, 0, 50)
+warning.Font = Enum.Font.SourceSans
+warning.Text = "!!WARNING!!"
+warning.TextColor3 = Color3.fromRGB(0, 0, 0)
+warning.TextScaled = true
+warning.TextSize = 14.000
+warning.TextWrapped = true
+
+TextLabel.Parent = Money
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 33, 37)
+TextLabel.Position = UDim2.new(0, 0, 0.698581576, 0)
+TextLabel.Size = UDim2.new(0, 473, 0, 85)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Use this at ur own risk admin can see it and ban u!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Player.Name = "Player"
+Player.Parent = Mainframe
+Player.BackgroundColor3 = Color3.fromRGB(6, 114, 255)
+Player.Position = UDim2.new(0, 0, 0.333333403, 0)
+Player.Size = UDim2.new(0, 473, 0, 282)
+Player.Visible = false
+
+SuperSpeed.Name = "SuperSpeed"
+SuperSpeed.Parent = Player
+SuperSpeed.BackgroundColor3 = Color3.fromRGB(12, 210, 255)
+SuperSpeed.Size = UDim2.new(0, 200, 0, 50)
+SuperSpeed.Font = Enum.Font.SourceSans
+SuperSpeed.Text = "SuperSpeed"
+SuperSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+SuperSpeed.TextSize = 14.000
+SuperSpeed.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 125
+end)
+
+NormaleSpeed.Name = "NormaleSpeed"
+NormaleSpeed.Parent = Player
+NormaleSpeed.BackgroundColor3 = Color3.fromRGB(53, 235, 255)
+NormaleSpeed.Position = UDim2.new(0, 0, 0.262411326, 0)
+NormaleSpeed.Size = UDim2.new(0, 200, 0, 50)
+NormaleSpeed.Font = Enum.Font.SourceSans
+NormaleSpeed.Text = "Normale Speed"
+NormaleSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+NormaleSpeed.TextSize = 14.000
+NormaleSpeed.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+SuperJump.Name = "SuperJump"
+SuperJump.Parent = Player
+SuperJump.BackgroundColor3 = Color3.fromRGB(37, 186, 255)
+SuperJump.Position = UDim2.new(0.577167034, 0, -0.00354609918, 0)
+SuperJump.Size = UDim2.new(0, 200, 0, 50)
+SuperJump.Font = Enum.Font.SourceSans
+SuperJump.Text = "SuperJump"
+SuperJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+SuperJump.TextSize = 14.000
+SuperJump.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 125
+end)
+
+NormaleJump.Name = "Normale Jump"
+NormaleJump.Parent = Player
+NormaleJump.BackgroundColor3 = Color3.fromRGB(39, 172, 255)
+NormaleJump.Position = UDim2.new(0.577167034, 0, 0.262411356, 0)
+NormaleJump.Size = UDim2.new(0, 200, 0, 50)
+NormaleJump.Font = Enum.Font.SourceSans
+NormaleJump.Text = "NormalJump"
+NormaleJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+NormaleJump.TextSize = 14.000
+NormaleJump.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 20
+end)
+
+
+
+Teleport.Name = "Teleport"
+Teleport.Parent = Mainframe
+Teleport.BackgroundColor3 = Color3.fromRGB(12, 105, 255)
+Teleport.Position = UDim2.new(0.00211416557, 0, 0.330969334, 0)
+Teleport.Size = UDim2.new(0, 473, 0, 282)
+Teleport.Visible = false
+
+PawnShop.Name = "PawnShop"
+PawnShop.Parent = Teleport
+PawnShop.BackgroundColor3 = Color3.fromRGB(11, 141, 255)
+PawnShop.Size = UDim2.new(0, 191, 0, 50)
+PawnShop.Font = Enum.Font.SourceSans
+PawnShop.Text = "PawnShop"
+PawnShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+PawnShop.TextSize = 14.000
+PawnShop.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(155.504425, 7.73404026, 44.0928879, -0.919350207, 7.25056779e-08, 0.393440217, 3.66555994e-08, 1, -9.86334001e-08, -0.393440217, -7.62568533e-08, -0.919350207)
+end)
+
+Hospital.Name = "Hospital"
+Hospital.Parent = Teleport
+Hospital.BackgroundColor3 = Color3.fromRGB(25, 163, 255)
+Hospital.Position = UDim2.new(0, 0, 0.177304968, 0)
+Hospital.Size = UDim2.new(0, 191, 0, 50)
+Hospital.Font = Enum.Font.SourceSans
+Hospital.Text = "Hospital"
+Hospital.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hospital.TextSize = 14.000
+Hospital.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(587.363464, 5.56836414, -483.73291, -0.423917234, -3.71778839e-08, 0.905700922, -1.27965203e-08, 1, 3.50592764e-08, -0.905700922, 3.27241145e-09, -0.423917234)
+end)
+
+GunStore.Name = "GunStore"
+GunStore.Parent = Teleport
+GunStore.BackgroundColor3 = Color3.fromRGB(12, 150, 255)
+GunStore.Position = UDim2.new(0, 0, 0.354609936, 0)
+GunStore.Size = UDim2.new(0, 191, 0, 50)
+GunStore.Font = Enum.Font.SourceSans
+GunStore.Text = "GunStore"
+GunStore.TextColor3 = Color3.fromRGB(0, 0, 0)
+GunStore.TextSize = 14.000
+GunStore.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(122.883026, 5.33392334, -58.2411842, 0.99986279, -4.09558503e-08, -0.016563436, 3.94579942e-08, 1, -9.07581352e-08, 0.016563436, 9.00921222e-08, 0.99986279)
+end)
+
+
+clothingstoregirl.Name = "clothing store girl"
+clothingstoregirl.Parent = Teleport
+clothingstoregirl.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
+clothingstoregirl.Position = UDim2.new(0.621564507, 0, 0.173758864, 0)
+clothingstoregirl.Size = UDim2.new(0, 179, 0, 50)
+clothingstoregirl.Font = Enum.Font.SourceSans
+clothingstoregirl.Text = "Clothing store girl"
+clothingstoregirl.TextColor3 = Color3.fromRGB(0, 0, 0)
+clothingstoregirl.TextSize = 14.000
+clothingstoregirl.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(258.434784, 5.32825947, -85.9784393, 0.72601074, -1.73568502e-08, -0.687683344, -3.72424971e-08, 1, -6.45577742e-08, 0.687683344, 7.2480681e-08, 0.72601074)
+	end)
+
+BarberShop.Name = "BarberShop"
+BarberShop.Parent = Teleport
+BarberShop.BackgroundColor3 = Color3.fromRGB(12, 105, 255)
+BarberShop.Position = UDim2.new(0.621564507, 0, 0.351063818, 0)
+BarberShop.Size = UDim2.new(0, 179, 0, 50)
+BarberShop.Font = Enum.Font.SourceSans
+BarberShop.Text = "BarberShop"
+BarberShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+BarberShop.TextSize = 14.000
+BarberShop.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(160.313156, 5.30042839, -49.6820755, 0.271839947, 2.10260662e-08, 0.962342501, 7.42664819e-09, 1, -2.39466988e-08, -0.962342501, 1.36566483e-08, 0.271839947)
+end)
+
+JobCenter.Name = "JobCenter"
+JobCenter.Parent = Teleport
+JobCenter.BackgroundColor3 = Color3.fromRGB(7, 148, 255)
+JobCenter.Position = UDim2.new(0, 0, 0.53191489, 0)
+JobCenter.Size = UDim2.new(0, 191, 0, 50)
+JobCenter.Font = Enum.Font.SourceSans
+JobCenter.Text = "JobCenter"
+JobCenter.TextColor3 = Color3.fromRGB(0, 0, 0)
+JobCenter.TextSize = 14.000
+JobCenter.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(36.6146927, 5.859025, -103.406052, 0.110209584, -3.6420527e-08, -0.993908346, 3.11397041e-09, 1, -3.62984558e-08, 0.993908346, 9.05436559e-10, 0.110209584)
+end)
+
+
+InkedTattoos.Name = "Inked Tattoos"
+InkedTattoos.Parent = Teleport
+InkedTattoos.BackgroundColor3 = Color3.fromRGB(7, 81, 255)
+InkedTattoos.Position = UDim2.new(0.621564507, 0, 0.528368771, 0)
+InkedTattoos.Size = UDim2.new(0, 179, 0, 50)
+InkedTattoos.Font = Enum.Font.SourceSans
+InkedTattoos.Text = "Inked Tattoos"
+InkedTattoos.TextColor3 = Color3.fromRGB(0, 0, 0)
+InkedTattoos.TextSize = 14.000
+InkedTattoos.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(439.754089, 5.35883331, -109.978287, 0.999841988, 3.70820956e-08, -0.0177770723, -3.64224526e-08, 1, 3.74300697e-08, 0.0177770723, -3.67766688e-08, 0.999841988	)
+end)
+
+
+clothingstoreboy.Name = "clothing store boy"
+clothingstoreboy.Parent = Teleport
+clothingstoreboy.BackgroundColor3 = Color3.fromRGB(0, 115, 255)
+clothingstoreboy.Position = UDim2.new(0.621564507, 0, -0.00354609918, 0)
+clothingstoreboy.Size = UDim2.new(0, 179, 0, 50)
+clothingstoreboy.Font = Enum.Font.SourceSans
+clothingstoreboy.Text = "Clothing store boy"
+clothingstoreboy.TextColor3 = Color3.fromRGB(0, 0, 0)
+clothingstoreboy.TextSize = 14.000
+clothingstoreboy.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(256.128387, 5.30083752, -48.4868889, -0.775949717, 1.66376797e-08, -0.630794764, 2.53229757e-08, 1, -4.7744142e-09, 0.630794764, -1.96783052e-08, -0.775949717)
+end)
+
+TextButton.Parent = Teleport
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(-0.00211416488, 0, 0.748226941, 0)
+TextButton.Size = UDim2.new(0, 472, 0, 65)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "More added SOON"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TabHolder.Name = "TabHolder"
+TabHolder.Parent = Mainframe
+TabHolder.BackgroundColor3 = Color3.fromRGB(10, 202, 255)
+TabHolder.Size = UDim2.new(0, 473, 0, 141)
+
+teleport.Name = "teleport"
+teleport.Parent = TabHolder
+teleport.BackgroundColor3 = Color3.fromRGB(6, 126, 255)
+teleport.Position = UDim2.new(0, 0, 0.496453911, 0)
+teleport.Size = UDim2.new(0, 157, 0, 71)
+teleport.Font = Enum.Font.SourceSans
+teleport.Text = "teleports"
+teleport.TextColor3 = Color3.fromRGB(0, 0, 0)
+teleport.TextSize = 14.000
+
+Player_2.Name = "Player"
+Player_2.Parent = TabHolder
+Player_2.BackgroundColor3 = Color3.fromRGB(20, 110, 255)
+Player_2.Position = UDim2.new(0.331923902, 0, 0.496453881, 0)
+Player_2.Size = UDim2.new(0, 162, 0, 71)
+Player_2.Font = Enum.Font.SourceSans
+Player_2.Text = "Player"
+Player_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player_2.TextSize = 14.000
+
+FastMoney.Name = "FastMoney"
+FastMoney.Parent = TabHolder
+FastMoney.BackgroundColor3 = Color3.fromRGB(16, 151, 255)
+FastMoney.Position = UDim2.new(0.674418628, 0, 0.496453911, 0)
+FastMoney.Size = UDim2.new(0, 154, 0, 71)
+FastMoney.Font = Enum.Font.SourceSans
+FastMoney.Text = "FastMoney"
+FastMoney.TextColor3 = Color3.fromRGB(0, 0, 0)
+FastMoney.TextSize = 14.000
+
+Madeby.Name = "Made by"
+Madeby.Parent = Mainframe
+Madeby.BackgroundColor3 = Color3.fromRGB(16, 88, 255)
+Madeby.Size = UDim2.new(0, 473, 0, 50)
+Madeby.Font = Enum.Font.SourceSans
+Madeby.Text = "Made by Young_Killa#6362"
+Madeby.TextColor3 = Color3.fromRGB(0, 0, 0)
+Madeby.TextScaled = true
+Madeby.TextSize = 14.000
+Madeby.TextWrapped = true
+
+-- Scripts:
+
+local function GXKAYK_fake_script() -- teleport.LocalScript 
+	local script = Instance.new('LocalScript', teleport)
+
+	script.Parent.MouseButton1Down:connect(function()
+	script.Parent.Parent.Parent.Teleport.Visible = true
+		script.Parent.Parent.Parent.Money.Visible = false
+		script.Parent.Parent.Parent.Player.Visible = false
+	end)
+end
+coroutine.wrap(GXKAYK_fake_script)()
+local function CIIOM_fake_script() -- Player_2.LocalScript 
+	local script = Instance.new('LocalScript', Player_2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.Teleport.Visible = false
+		script.Parent.Parent.Parent.Money.Visible = false
+		script.Parent.Parent.Parent.Player.Visible = true
+	end)
+end
+coroutine.wrap(CIIOM_fake_script)()
+local function XZQCQAP_fake_script() -- FastMoney.LocalScript 
+	local script = Instance.new('LocalScript', FastMoney)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.Teleport.Visible = false
+		script.Parent.Parent.Parent.Money.Visible = true
+		script.Parent.Parent.Parent.Player.Visible = false
+	end)
+end
+coroutine.wrap(XZQCQAP_fake_script)()
